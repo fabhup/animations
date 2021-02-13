@@ -24,7 +24,7 @@
     0% {
     }
     100% {
-        transform: translate(-1.6rem, -2em) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(150deg);
+        transform: translate(-1.6rem, -2em) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(-150deg);
     }
 }
 
@@ -80,9 +80,10 @@
 
 @keyframes anim-ball-yellow-3-2{
     0% {  
+        transform: translate(-0.8rem, -9.2rem) rotate(-135deg);
     }
     100% {
-        transform: translate(-1.1rem, -9.4rem) rotateX(20deg) rotate(-180deg);
+        transform: translate(-1.1rem, -9.4rem) rotate(-135deg);
         visibility: visible;  
     }
 }
