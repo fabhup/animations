@@ -28,7 +28,7 @@
             left:3rem;
             & img {
                 visibility: hidden;
-                animation: anim-ball-yellow-2 1800ms 1000ms cubic-bezier(.05,.98,0,1) forwards;
+                animation: anim-ball-yellow-2 1800ms 2000ms cubic-bezier(.05,.98,0,1) forwards;
                 } 
             
         }
@@ -36,17 +36,17 @@
             top:12rem;
             left:6.5rem;
             & img {
-                visibility: visible;
-                animation: anim-ball-yellow-3-1 2000ms 8s cubic-bezier(.39,.94,.67,.99) forwards,
-                           anim-ball-yellow-3-2 500ms 12.2s cubic-bezier(.39,.94,.67,.99) forwards;;
+                visibility: hidden;
+                animation: anim-ball-yellow-3-1 2000ms 9s cubic-bezier(.39,.94,.67,.99) forwards,
+                           anim-ball-yellow-3-2 500ms 13.2s cubic-bezier(.39,.94,.67,.99) forwards;;
                 } 
         }
         &-4 {
             top:12rem;
             left:6rem;
             & img {
-                visibility: visible;
-                animation: anim-ball-yellow-4 1300ms 15s cubic-bezier(.39,.94,.67,.99) forwards;
+                visibility: hidden;
+                animation: anim-ball-yellow-4 1300ms 16s cubic-bezier(.39,.94,.67,.99) forwards;
                 } 
         }
     }
@@ -65,23 +65,24 @@
             top:3rem;
             left:3.6rem;  
             & img {
-                animation: anim-ball-red-2 1950ms 1350ms cubic-bezier(.39,.94,.67,.99) forwards;
+                visibility: visible;
+                animation: anim-ball-red-2 1950ms 2420ms cubic-bezier(.39,.94,.67,.99) forwards;
                 }        
         }
         &-3 {
             top:12rem;
             left:7rem;
             & img {
-                visibility: visible;
-                animation: anim-ball-red-3 1200ms 4s cubic-bezier(.39,.94,.67,.99) forwards;
+                visibility: hidden;
+                animation: anim-ball-red-3 1200ms 5s cubic-bezier(.39,.94,.67,.99) forwards;
                 } 
         }
         &-4 {
             top:12.2rem;
             left:6.6rem;
             & img {
-                visibility: visible;
-                animation: anim-ball-red-4 1200ms 11.3s cubic-bezier(.39,.94,.67,.99) forwards
+                visibility: hidden;
+                animation: anim-ball-red-4 1200ms 12.3s cubic-bezier(.39,.94,.67,.99) forwards
                 } 
         }
 
@@ -94,6 +95,7 @@
     margin: 5rem;
     display:flex;
     width: 14rem;
+    height:10.5rem;
     justify-content: space-around;
     overflow: hidden;
     

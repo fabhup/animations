@@ -7,23 +7,12 @@
     }
 }
 
-@keyframes gabaky-throw-ball{
-    0% {
-        transform: translate(0, 0);
-    }
-    80% {
-        transform: translate(1rem, -1rem);
-    }
-
-    100% {
-        transform: translate(1.5rem, -1.5rem);
-    }
-}
-
 @keyframes anim-ball-red-2{
     0% {
+        visibility: visible; 
     }
     100% {
+        visibility: visible; 
         transform: translate(-1.6rem, -2em) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(-150deg);
     }
 }
@@ -31,10 +20,6 @@
 @keyframes anim-ball-yellow-2{
     0% {
         visibility: visible;
-    }
-    80% {
-        transform: translate(0.9rem, -9rem) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(540deg);
-        visibility: visible;  
     }
     100% {
         transform: translate(0.9rem, -9rem) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(540deg);
@@ -58,10 +43,6 @@
     0% {
         visibility: visible;
     }
-    80% {
-        transform: translate(-0.8rem, -9.2rem) rotateX(20deg) rotate(-120deg);
-        visibility: visible;  
-    }
     100% {
         transform: translate(-0.8rem, -9.2rem) rotateX(20deg) rotate(-120deg);
         visibility: visible;  
@@ -80,7 +61,8 @@
 
 @keyframes anim-ball-yellow-3-2{
     0% {  
-        transform: translate(-0.8rem, -9.2rem) rotate(-135deg);
+        visibility: visible; 
+        transform: translate(-0.8rem, -9.2rem) rotate(-120deg);
     }
     100% {
         transform: translate(-1.1rem, -9.4rem) rotate(-135deg);
@@ -90,6 +72,7 @@
 
 @keyframes anim-ball-yellow-4{
     0% {  
+        visibility: visible; 
     }
     100% {
         transform: translate(0.5rem, -7.4rem) rotateX(20deg) rotate(-180deg);
