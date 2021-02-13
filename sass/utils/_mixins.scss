@@ -1,0 +1,30 @@
+
+@mixin box-shadow($colour-shadow:$colour-btn-shadow) {
+    box-shadow: 0px 5px 4px $colour-shadow;
+}
+
+@mixin btn {
+    color: $colour-white;
+    background: $colour-btn;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding:1rem 1.4rem 1rem 1.4rem;
+    margin: 1rem 0rem;
+    -webkit-tap-highlight-color: transparent;
+    @include box-shadow($colour-btn-shadow);
+    font-weight: 500;
+    opacity:1;
+    transition: all 340ms ease-out;
+    &:hover{
+        opacity:0.8;
+        @include box-shadow($colour-btn-shadow--hover);
+    }
+}
+
+@mixin flex-center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

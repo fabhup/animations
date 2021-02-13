@@ -1,0 +1,21 @@
+{
+  "name": "animations",
+  "version": "1.0.0",
+  "description": "exemples d'animations",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabhup/animations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabhup/animations/issues"
+  },
+  "homepage": "https://github.com/fabhup/animations#readme",
+  "browserslist": "last 4 versions"
+}

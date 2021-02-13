@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // set default font-size to 4vw 
+    font-size: 4.25vmin;
+}

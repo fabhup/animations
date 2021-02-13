@@ -1,0 +1,24 @@
+.footer {
+    padding: $layout-margin $layout-margin $layout-margin*1.5 $layout-margin;
+    background: $colour-blackgrey;
+    color:white;
+
+    &__logo {
+        height: 1.1rem;
+        & path {
+            fill:white
+        }
+    }
+
+    &__link-with-icone{
+        & img {
+            width:0.8rem;
+            height:0.8rem;
+            filter: invert(100%);
+            padding-right: 0.5rem;
+        }
+        &--rotate img {
+            transform: rotate(-20deg);
+        }
+    }
+}

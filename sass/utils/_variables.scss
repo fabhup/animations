@@ -1,0 +1,26 @@
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+
+$colour-white: #fff;
+$colour-lightgreen:#99e2d0;
+$colour-darkgreen:#008766;
+$colour-lightgrey:#f6f6f6;
+$colour-darkgrey:#7e7e7e;
+$colour-blackgrey: #353535;
+
+$colour-logo: #101010;
+$colour-form-txt: #353535;
+$colour-btn : linear-gradient(175deg,$colour-secondary,$colour-primary);
+$colour-btn-shadow: lighten($colour-darkgrey,35%);
+$colour-btn--hover : linear-gradient(175deg,lighten($colour-secondary,5%),lighten($colour-primary,5%));
+$colour-btn-shadow--hover: darken($colour-btn-shadow,10%);
+
+
+$colour-light-backgrnd: $colour-lightgrey;
+$colour-dark-backgrnd: #eaeaea;
+
+$layout-margin: 4rem;
+$heading-shadow-size: .55rem;
+
+

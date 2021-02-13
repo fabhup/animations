@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: $layout-margin $layout-margin $layout-margin/1.5 $layout-margin;
+    &__logo {
+        height: 2rem;
+    }
+}

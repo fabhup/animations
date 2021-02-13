@@ -1,0 +1,101 @@
+
+.picture {
+    & img {
+        width:100%;
+    }
+}
+
+.picture__cible {
+    width:10rem;
+    transform: rotate(90deg);
+}
+
+.picture__ball {
+    position:absolute;
+    &--yellow {
+        width:0.9rem;
+        transform: rotate(0deg);
+        ;
+        &-1 {
+            bottom:1rem;
+            left:5rem;
+            & img {
+            transform: rotate(90deg);
+            }
+        }
+        &-2 {
+            top:12rem;
+            left:3rem;
+            & img {
+                visibility: hidden;
+                animation: anim-ball-yellow-2 1800ms 1000ms cubic-bezier(.05,.98,0,1) forwards;
+                } 
+            
+        }
+        &-3 {
+            top:12rem;
+            left:6.5rem;
+            & img {
+                visibility: visible;
+                animation: anim-ball-yellow-3-1 2000ms 8s cubic-bezier(.39,.94,.67,.99) forwards,
+                           anim-ball-yellow-3-2 500ms 12.2s cubic-bezier(.39,.94,.67,.99) forwards;;
+                } 
+        }
+        &-4 {
+            top:12rem;
+            left:6rem;
+            & img {
+                visibility: visible;
+                animation: anim-ball-yellow-4 1300ms 15s cubic-bezier(.39,.94,.67,.99) forwards;
+                } 
+        }
+    }
+    &--red {
+        width:1rem;
+        transform: rotate(0deg);
+        &-1 {
+            bottom:6rem;
+            right:2rem;
+            transform: rotate(165deg);
+            & img {
+                visibility: visible;
+                } 
+        }
+        &-2 {
+            top:3rem;
+            left:3.6rem;  
+            & img {
+                animation: anim-ball-red-2 1950ms 1350ms cubic-bezier(.39,.94,.67,.99) forwards;
+                }        
+        }
+        &-3 {
+            top:12rem;
+            left:7rem;
+            & img {
+                visibility: visible;
+                animation: anim-ball-red-3 1200ms 4s cubic-bezier(.39,.94,.67,.99) forwards;
+                } 
+        }
+        &-4 {
+            top:12.2rem;
+            left:6.6rem;
+            & img {
+                visibility: visible;
+                animation: anim-ball-red-4 1200ms 11.3s cubic-bezier(.39,.94,.67,.99) forwards
+                } 
+        }
+
+        ;
+    }
+}
+
+.animation-gabaky {
+    position:relative;
+    margin: 5rem;
+    display:flex;
+    width: 14rem;
+    justify-content: space-around;
+    overflow: hidden;
+    
+}
+
