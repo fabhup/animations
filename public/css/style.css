@@ -40,7 +40,7 @@
     visibility: visible;
   }
   100% {
-    transform: translate(0.5rem, -5.6rem) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(540deg);
+    transform: translate(0.5rem, -5.3rem) rotate3d(-0.9, -0.9, -0.2, 10deg) rotate(540deg);
     visibility: visible;
   }
 }
