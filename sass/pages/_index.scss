@@ -105,8 +105,131 @@
     display:flex;
     width: 14rem;
     height:10.5rem;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;
-    
 }
+
+// .spin-loader-gabaky{
+//     transform: translate(10rem,5rem) rotate(130deg);             
+//     transition: transform 1s;   
+//     width:30rem;  
+// }
+.picture-spin-loader__ball--red img {
+    width:2.5rem;
+    transform: rotate(270deg);              
+    transition: transform 1s;   
+}                
+
+
+.spin-loader-gabaky {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 4rem;
+& .yellow-ball {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+& .red-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+&-1 {
+   & .ball {
+        margin: 0 0.5rem;
+        animation: 2s spin-loader-1 ease-in-out infinite;
+        }
+    & .red-1 {
+        animation-delay: .25s;
+        }
+        
+    & .yellow-2 {
+    animation-delay: .5s;
+    }
+    
+    & .red-2 {
+    animation-delay: .75s;
+    }
+    }
+&-2 {
+    & .ball {
+        margin: 0 0.5rem;
+        animation: 2s spin-loader-2 ease-out infinite;
+        }
+    & .red-1 {
+        animation-delay: .25s;
+        }
+        
+    & .yellow-2 {
+    animation-delay: .5s;
+    }
+    
+    & .red-2 {
+    animation-delay: .75s;
+    }
+}
+
+&-3 {
+    & .ball {
+        margin: 0 0.5rem;
+        animation: 2s spin-loader-3 ease-in-out infinite;
+        }
+    & .red-1 {
+        animation-delay: .25s;
+        }
+        
+    & .yellow-2 {
+    animation-delay: .5s;
+    }
+    
+    & .red-2 {
+    animation-delay: .75s;
+    }
+}
+
+&-4 {
+    & .ball {
+        margin: 0 0.5rem;
+        animation: 2s spin-loader-3 cubic-bezier(.93,0,.01,.99) infinite;
+        }
+    & .red-1 {
+        animation-delay: .25s;
+    }
+        
+    & .yellow-2 {
+        animation-delay: .5s;
+    }
+    
+    & .red-2 {
+        animation-delay: .75s;
+    }
+}
+
+}
+
+.spin-loader-gabaky-5 {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    margin:1rem 10rem;
+    animation: spin-loader-5-rotate 2.0s infinite linear;
+
+    & .ball-spinner-5 {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        animation: spin-loader-5-bounce 2.0s infinite ease-in-out;
+      }
+    
+    & .ball-spinner-5:nth-child(2) {
+        top: auto;
+        bottom: 0;
+        animation-delay: -1.0s;
+      }
+  }
+
 

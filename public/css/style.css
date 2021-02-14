@@ -70,6 +70,78 @@
     visibility: visible;
   }
 }
+@keyframes throw-ball {
+  0% {
+    transform: translate(6rem, -2rem);
+  }
+  10% {
+    transform: translate(10rem, -4rem);
+  }
+  20% {
+    transform: translate(11.5rem, -3.5rem);
+  }
+  40% {
+    transform: translate(13rem, -3rem);
+  }
+  60% {
+    transform: translate(14.5rem, -2.5rem);
+  }
+  80% {
+    transform: translate(16rem, -1rem);
+  }
+  100% {
+    transform: translate(18rem, 0rem);
+  }
+}
+@keyframes spin-loader-1 {
+  50% {
+    transform: translateY(1rem) rotate(180deg) scale(0.8);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes spin-loader-2 {
+  50% {
+    transform: translateX(3.5rem) rotate(180deg) scale(0.9);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes spin-loader-3 {
+  50% {
+    transform: translate(0rem, 1rem);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes spin-loader-4 {
+  25% {
+    transform: translate(4rem, -4rem) rotate(780deg);
+    transform-origin: 30% 50%;
+  }
+  40% {
+    transform: translate(5rem, -6rem) rotate(780deg);
+    transform-origin: 30% 50%;
+  }
+  50% {
+    transform: translate(8rem, 0rem) rotate(780deg);
+    transform-origin: 90% 90%;
+  }
+  80% {
+    transform: translate(8rem, 0rem) rotate(780deg);
+    transform-origin: 90% 90%;
+  }
+}
+@keyframes spin-loader-5-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-loader-5-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
 *,
 *::after,
 *::before {
@@ -275,8 +347,102 @@ ul {
   display: flex;
   width: 14rem;
   height: 10.5rem;
-  justify-content: space-around;
+  justify-content: center;
   overflow: hidden;
+}
+
+.picture-spin-loader__ball--red img {
+  width: 2.5rem;
+  transform: rotate(270deg);
+  transition: transform 1s;
+}
+
+.spin-loader-gabaky {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+.spin-loader-gabaky .yellow-ball {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.spin-loader-gabaky .red-ball {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.spin-loader-gabaky-1 .ball {
+  margin: 0 0.5rem;
+  animation: 2s spin-loader-1 ease-in-out infinite;
+}
+.spin-loader-gabaky-1 .red-1 {
+  animation-delay: 0.25s;
+}
+.spin-loader-gabaky-1 .yellow-2 {
+  animation-delay: 0.5s;
+}
+.spin-loader-gabaky-1 .red-2 {
+  animation-delay: 0.75s;
+}
+.spin-loader-gabaky-2 .ball {
+  margin: 0 0.5rem;
+  animation: 2s spin-loader-2 ease-out infinite;
+}
+.spin-loader-gabaky-2 .red-1 {
+  animation-delay: 0.25s;
+}
+.spin-loader-gabaky-2 .yellow-2 {
+  animation-delay: 0.5s;
+}
+.spin-loader-gabaky-2 .red-2 {
+  animation-delay: 0.75s;
+}
+.spin-loader-gabaky-3 .ball {
+  margin: 0 0.5rem;
+  animation: 2s spin-loader-3 ease-in-out infinite;
+}
+.spin-loader-gabaky-3 .red-1 {
+  animation-delay: 0.25s;
+}
+.spin-loader-gabaky-3 .yellow-2 {
+  animation-delay: 0.5s;
+}
+.spin-loader-gabaky-3 .red-2 {
+  animation-delay: 0.75s;
+}
+.spin-loader-gabaky-4 .ball {
+  margin: 0 0.5rem;
+  animation: 2s spin-loader-3 cubic-bezier(0.93, 0, 0.01, 0.99) infinite;
+}
+.spin-loader-gabaky-4 .red-1 {
+  animation-delay: 0.25s;
+}
+.spin-loader-gabaky-4 .yellow-2 {
+  animation-delay: 0.5s;
+}
+.spin-loader-gabaky-4 .red-2 {
+  animation-delay: 0.75s;
+}
+
+.spin-loader-gabaky-5 {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem 10rem;
+  animation: spin-loader-5-rotate 2s infinite linear;
+}
+.spin-loader-gabaky-5 .ball-spinner-5 {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin-loader-5-bounce 2s infinite ease-in-out;
+}
+.spin-loader-gabaky-5 .ball-spinner-5:nth-child(2) {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
 }
 
 /*# sourceMappingURL=style.css.map */
