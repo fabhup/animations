@@ -8,6 +8,7 @@
 .picture__cible {
     width:10rem;
     transform: rotate(90deg);
+    z-index:0;
 }
 
 .picture__ball {
@@ -19,6 +20,7 @@
         &-1 {
             bottom:1rem;
             left:5rem;
+            z-index:1;
             & img {
             transform: rotate(90deg);
             }
@@ -26,6 +28,7 @@
         &-2 {
             top:12rem;
             left:3rem;
+            z-index:3;
             & img {
                 visibility: hidden;
                 animation: anim-ball-yellow-2 1800ms 2000ms cubic-bezier(.05,.98,0,1) forwards;
@@ -35,6 +38,7 @@
         &-3 {
             top:12rem;
             left:6.5rem;
+            z-index:5;
             & img {
                 visibility: hidden;
                 animation: anim-ball-yellow-3-1 2000ms 9s cubic-bezier(.39,.94,.67,.99) forwards,
@@ -44,6 +48,7 @@
         &-4 {
             top:12rem;
             left:6rem;
+            z-index:7;
             & img {
                 visibility: hidden;
                 animation: anim-ball-yellow-4 1300ms 16s cubic-bezier(.39,.94,.67,.99) forwards;
@@ -57,6 +62,7 @@
             bottom:6rem;
             right:2rem;
             transform: rotate(165deg);
+            z-index:2;
             & img {
                 visibility: visible;
                 } 
@@ -64,6 +70,7 @@
         &-2 {
             top:3rem;
             left:3.6rem;  
+            z-index:4;
             & img {
                 visibility: visible;
                 animation: anim-ball-red-2 1950ms 2420ms cubic-bezier(.39,.94,.67,.99) forwards;
@@ -72,6 +79,7 @@
         &-3 {
             top:12rem;
             left:7rem;
+            z-index:6;
             & img {
                 visibility: hidden;
                 animation: anim-ball-red-3 1200ms 5s cubic-bezier(.39,.94,.67,.99) forwards;
@@ -80,9 +88,10 @@
         &-4 {
             top:12.2rem;
             left:6.6rem;
+            z-index:8;
             & img {
                 visibility: hidden;
-                animation: anim-ball-red-4 1200ms 12.3s cubic-bezier(.39,.94,.67,.99) forwards
+                animation: anim-ball-red-4 1200ms 12.3s cubic-bezier(.39,.94,.67,.99) forwards;
                 } 
         }
 

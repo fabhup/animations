@@ -183,6 +183,7 @@ ul {
 .picture__cible {
   width: 10rem;
   transform: rotate(90deg);
+  z-index: 0;
 }
 
 .picture__ball {
@@ -195,6 +196,7 @@ ul {
 .picture__ball--yellow-1 {
   bottom: 1rem;
   left: 5rem;
+  z-index: 1;
 }
 .picture__ball--yellow-1 img {
   transform: rotate(90deg);
@@ -202,6 +204,7 @@ ul {
 .picture__ball--yellow-2 {
   top: 12rem;
   left: 3rem;
+  z-index: 3;
 }
 .picture__ball--yellow-2 img {
   visibility: hidden;
@@ -210,6 +213,7 @@ ul {
 .picture__ball--yellow-3 {
   top: 12rem;
   left: 6.5rem;
+  z-index: 5;
 }
 .picture__ball--yellow-3 img {
   visibility: hidden;
@@ -218,6 +222,7 @@ ul {
 .picture__ball--yellow-4 {
   top: 12rem;
   left: 6rem;
+  z-index: 7;
 }
 .picture__ball--yellow-4 img {
   visibility: hidden;
@@ -231,6 +236,7 @@ ul {
   bottom: 6rem;
   right: 2rem;
   transform: rotate(165deg);
+  z-index: 2;
 }
 .picture__ball--red-1 img {
   visibility: visible;
@@ -238,6 +244,7 @@ ul {
 .picture__ball--red-2 {
   top: 3rem;
   left: 3.6rem;
+  z-index: 4;
 }
 .picture__ball--red-2 img {
   visibility: visible;
@@ -246,6 +253,7 @@ ul {
 .picture__ball--red-3 {
   top: 12rem;
   left: 7rem;
+  z-index: 6;
 }
 .picture__ball--red-3 img {
   visibility: hidden;
@@ -254,6 +262,7 @@ ul {
 .picture__ball--red-4 {
   top: 12.2rem;
   left: 6.6rem;
+  z-index: 8;
 }
 .picture__ball--red-4 img {
   visibility: hidden;
